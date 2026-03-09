@@ -26,3 +26,35 @@ li {
   width: 200px;
   border-radius: 8px;
 }
+
+<style>
+body{
+  background-color:pink;
+  text-align:center;
+}
+h1{
+  color:blue;
+}
+p{
+  color:blue;
+  font-size:20px;
+  border:3px solid black;
+  padding:2px;
+}
+
+
+</style>
+<head>
+  <title>my profile</title>
+</head>
+</head>
+
+<body>
+
+<h1>My profile</h1>
+
+<p>I am anu mariyam joseph.lam studying cse.want to became  sucessful entreprenuer
+</p>
+
+</body>
+</html>
