@@ -137,3 +137,32 @@ footer{
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Practice</title>
+   </head>
+   <body>
+       
+   <button id="show">click me</button>
+   <p id="t">welcome</p>
+   <button id="hide">hide</button>
+   <script>
+   let show=document.querySelector("#show");
+   let hide=document.querySelector("#hide");
+   let para=document.querySelector("#t");
+  
+  
+ hide.addEventListener("click", function () {
+
+    para.style.display = "none";
+
+});
+
+show.addEventListener("click", function () {
+
+    para.style.display = "block";
+});
+</script>
+</body
