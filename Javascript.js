@@ -84,3 +84,100 @@ sub.addEventListener("click", function(){
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+<input type="number" id="num1">
+
+<input type="number" id="num2">
+
+<br><br>
+
+<button id="addBtn">Add</button>
+
+<button id="subBtn">Subtract</button>
+<button id="mul">multipy</button>
+
+<h2 id="res">Result:</h2>
+
+<script>
+
+let bi = document.querySelector("#addBtn");
+
+let bis = document.querySelector("#subBtn");
+
+let res = document.querySelector("#res");
+let s=document.querySelector("#mul");
+if (num1=="") {
+    res.innerHTML="error";
+}
+
+
+
+function add(a,b){
+
+    return a+b;
+
+}
+
+
+
+function sub(a,b){
+
+    return a-b;
+
+}
+function mul(a,b){
+    return a*b;
+}
+s.addEventListener("click",function(){
+    let num1=Number(document.querySelector("#num1").value);
+    let num2=Number(document.querySelector("#num2").value);
+    if (num1==""||num2=="") {
+    res.innerHTML="error";
+}
+else{
+
+    let result=mul(num1,num2);
+    res.innerHTML= result;
+}
+});
+
+
+bi.addEventListener("click", function(){
+
+    let num1 = Number(document.querySelector("#num1").value);
+
+    let num2 = Number(document.querySelector("#num2").value);
+
+    let result = add(num1, num2);
+
+    res.innerHTML = "Result: " + result;
+
+});
+
+
+
+bis.addEventListener("click", function(){
+
+    let num1 = Number(document.querySelector("#num1").value);
+
+    let num2 = Number(document.querySelector("#num2").value);
+
+    let result = sub(num1, num2);
+
+    res.innerHTML = "Result: " + result;
+
+});
+
+</script>
+
+</body>
+
+</html>
