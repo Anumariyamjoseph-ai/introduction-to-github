@@ -181,3 +181,78 @@ bis.addEventListener("click", function(){
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do App</title>
+</head>
+
+<body>
+
+<h2>To Do App</h2>
+
+<input type="text" id="task">
+
+<button id="addBtn">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+
+let task = document.querySelector("#task");
+
+let addBtn = document.querySelector("#addBtn");
+
+let list = document.querySelector("#list");
+
+
+
+addBtn.addEventListener("click", function(){
+
+    let value = task.value;
+
+    if(value == ""){
+
+        alert("Enter task");
+
+    }
+
+    else{
+
+        let li = document.createElement("li");
+
+        li.innerHTML = value + " ";
+
+
+
+        let btn = document.createElement("button");
+
+        btn.innerHTML = "Delete";
+
+
+
+        btn.addEventListener("click", function(){
+
+            li.remove();
+
+        });
+
+
+
+        li.append(btn);
+
+        list.append(li);
+
+        task.value = "";
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
